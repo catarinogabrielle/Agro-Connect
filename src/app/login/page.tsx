@@ -68,7 +68,7 @@ export default function AuthPage() {
 
             <div className={styles.centralCard}>
                 <div className={styles.identityHeader}>
-                    <Leaf size={36} className={styles.identityIcon} />
+                    <Leaf size={30} className={styles.identityIcon} />
                     <h1 className={styles.identityTitle}>Agro-Connect</h1>
                 </div>
 

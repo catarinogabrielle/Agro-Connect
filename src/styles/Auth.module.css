@@ -20,19 +20,20 @@
 }
 
 .identityHeader {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .identityIcon {
   color: var(--color-primary);
-  width: 36px;
-  height: 36px;
-  margin-bottom: 0.25rem;
 }
 
 .identityTitle {
   font-size: 1.4rem;
   font-weight: 800;
+  margin-left: 7px;
   color: var(--color-primary);
 }
 
