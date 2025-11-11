@@ -1,6 +1,9 @@
 .pageWrapper {
   background-color: #f9fafb;
-  padding: 3rem 0 5rem 0;
+  padding: 3rem 1.5rem 5rem 1.5rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .pageTitle {
@@ -24,6 +27,7 @@
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
 }
 
 .moduleCard h2 {
@@ -199,4 +203,49 @@
 .itemRoute {
   font-size: 0.85rem;
   color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .pageWrapper {
+    padding: 2rem 1.25rem 3rem 1.25rem;
+  }
+
+  .pageTitle {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+    line-height: 1.2;
+  }
+
+  .layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .moduleCard {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .moduleCard h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .resultValue {
+    font-size: 1.6rem;
+  }
+
+  .itemId {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 1.8rem;
+  }
+  .moduleCard {
+    padding: 1rem;
+  }
 }

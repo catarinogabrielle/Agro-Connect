@@ -57,6 +57,7 @@
   font-size: 1rem;
   background: transparent;
   outline: none;
+  min-width: 0;
 }
 
 .searchButton {
@@ -204,4 +205,102 @@
 .categoryCard p {
   font-size: 0.9rem;
   color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .valueProps {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 3rem 1rem 4rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .searchForm {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .inputGroup {
+    flex: 0 0 100%;
+    width: 100%;
+    padding: 0 1rem;
+    height: 48px;
+    justify-content: flex-start;
+  }
+
+  .searchInput {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .searchButton {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .quickLinks {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .ctaSection {
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .ctaSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .ctaSection p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  .categorySection {
+    padding-bottom: 4rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .categoryGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .categoryCard {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categoryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .searchForm {
+    border-radius: 8px;
+  }
 }

@@ -4,6 +4,8 @@
   min-height: 100vh;
   justify-content: center;
   padding: 1rem;
+  align-items: center;
+  overflow-y: auto;
 }
 
 .centralCard {
@@ -14,9 +16,8 @@
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 3rem;
+  margin: 1.5rem 0;
   height: max-content;
-  overflow-y: auto;
 }
 
 .identityHeader {
@@ -184,6 +185,7 @@
   .centralCard {
     padding: 1.5rem 1rem;
     border-radius: 8px;
+    margin: 1rem 0;
   }
   .socialButtonsContainer {
     flex-direction: column;

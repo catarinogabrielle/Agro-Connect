@@ -204,3 +204,82 @@
   color: var(--color-primary-dark);
   margin-right: 8px;
 }
+
+@media (max-width: 1024px) {
+  .pageWrapper {
+    padding: 2rem 1rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-rows: auto;
+  }
+
+  .contentGrid > div:nth-child(1),
+  .contentGrid > div:nth-child(2),
+  .contentGrid > div:nth-child(3),
+  .contentGrid > div:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageWrapper {
+    padding: 1.5rem 0.5rem 3rem 0.5rem;
+  }
+
+  .header {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .metricGrid {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .metricCard {
+    padding: 1rem;
+  }
+
+  .metricValue {
+    font-size: 2rem;
+  }
+
+  .activityCard,
+  .recommendationCard {
+    padding: 1.25rem;
+  }
+
+  .pendingItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .pendingText {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .actionButton {
+    width: 100%;
+  }
+}

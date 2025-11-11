@@ -32,7 +32,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
             </div>
 
             <div className={styles.sideInfo}>
-                {/* 💥 BLOCO DE AVALIAÇÕES 💥 */}
                 <div className={styles.ratingBox}>
                     <Star size={18} fill="#f97316" color="#f97316" style={{ marginRight: 4 }} />
                     <span className={styles.ratingValue}>

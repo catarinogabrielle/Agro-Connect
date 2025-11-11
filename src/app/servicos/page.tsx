@@ -1,6 +1,6 @@
 import ServiceCard from '@/components/marketplace/ServiceCard/ServiceCard';
 import { Search, MapPin, Filter, Star, DollarSign } from 'lucide-react';
-import styles from '@/styles/Marketplace.module.css';
+import styles from '@/styles/Servicos.module.css';
 import { ServiceItem } from '@/lib/types';
 
 const mockServices: ServiceItem[] = [
