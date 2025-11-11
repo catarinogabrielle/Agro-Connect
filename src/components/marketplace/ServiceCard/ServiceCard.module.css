@@ -1,0 +1,143 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.mainInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.title a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  transition: color 0.3s;
+}
+
+.title a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.tagsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--color-text-default);
+  line-height: 1.5;
+  margin-top: 0.3rem;
+}
+
+.sideInfo {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.ratingBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.ratingValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-right: 0.3rem;
+}
+
+.reviewCount {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.priceSection {
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.priceLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.1rem;
+}
+
+.priceValue {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  margin-bottom: 0.3rem;
+}
+
+.provider {
+  font-size: 0.85rem;
+  color: #4b5563;
+  text-align: right;
+}
+
+.detailButton {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  display: block;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.detailButton:hover {
+  background-color: var(--color-primary-dark);
+}

@@ -1,0 +1,191 @@
+.authContainer {
+  display: flex;
+  background-color: var(--color-opacity);
+  min-height: 100vh;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.centralCard {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-surface, #ffffff);
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 3rem;
+  height: max-content;
+  overflow-y: auto;
+}
+
+.identityHeader {
+  margin-bottom: 1.5rem;
+}
+
+.identityIcon {
+  color: var(--color-primary);
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0.25rem;
+}
+
+.identityTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.switchTabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.activeTab,
+.inactiveTab {
+  padding: 0.6rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 700;
+  flex: 1;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.activeTab {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.inactiveTab {
+  color: #9ca3af;
+  border-bottom: 3px solid transparent;
+}
+
+.authForm {
+  width: 100%;
+  text-align: left;
+}
+.formTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 0.1rem;
+}
+
+.formSubtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  margin-bottom: 0.8rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(4, 120, 87, 0.15);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.forgotPassword {
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.authButton {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authButton:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.socialAuth {
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.socialAuth p {
+  color: #9ca3af;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.socialButtonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialButton {
+  flex: 1;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.socialButton:hover {
+  background-color: #e5e7eb;
+}
+
+@media (max-width: 500px) {
+  .centralCard {
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+  .socialButtonsContainer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

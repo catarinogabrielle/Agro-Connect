@@ -1,0 +1,164 @@
+.header {
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  transition: color 0.3s;
+}
+
+.logoIcon {
+  color: var(--color-primary);
+}
+
+.logo a:hover {
+  color: var(--color-primary-dark);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.nav a {
+  color: var(--color-text-dark);
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-secondary);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.dashboardLink {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.registerButton {
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
+  border: none;
+  border: 1px solid var(--color-secondary);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.registerButton:hover {
+  background-color: var(--color-secondary-dark);
+  border-color: var(--color-secondary-dark);
+}
+
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  padding: 0;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .container {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo a {
+    font-size: 1.3rem;
+  }
+  .logoIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .auth {
+    gap: 0.5rem;
+  }
+
+  .registerButton {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .menuToggle {
+    display: block;
+    color: var(--color-primary);
+  }
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-surface, white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  z-index: 90;
+  border-top: 1px solid #eee;
+}
+
+.mobileMenu a {
+  padding: 0.8rem 1.5rem;
+  color: var(--color-text-dark);
+  font-weight: 500;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.3s;
+}
+
+.mobileMenu a:last-child {
+  border-bottom: none;
+}
+
+.mobileMenu a:hover {
+  background-color: #f9fafb;
+  color: var(--color-primary);
+}

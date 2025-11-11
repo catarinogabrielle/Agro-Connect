@@ -1,0 +1,40 @@
+.sealTag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.sealOuro {
+  background-color: #ecfdf5;
+  color: var(--color-primary, #047857);
+  border: 1px solid var(--color-primary, #047857);
+}
+
+.sealOuro svg {
+  color: var(--color-primary, #047857);
+}
+
+.sealPrata {
+  background-color: #e0f2f7;
+  color: #0891b2;
+  border: 1px solid #0891b2;
+}
+
+.sealPrata svg {
+  color: #0891b2;
+}
+
+.sealBronze {
+  background-color: #fffbeb;
+  color: #d97706;
+  border: 1px solid #d97706;
+}
+
+.sealBronze svg {
+  color: #d97706;
+}
